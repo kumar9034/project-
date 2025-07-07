@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Section from './Section1';
+import Navbar from './Navbar';
 
 const images = [
   '/image-1.webp',
@@ -25,7 +27,8 @@ const AutoLoopBackground = () => {
         backgroundImage: `url(${images[current]})`,
       }}
     >
-      
+        <Navbar/>
+        <Section/>
     </div>
   );
 };
