@@ -1,4 +1,12 @@
 .bebas-font {
  font-family: 'Bebas Neue', sans-serif;
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @import "tailwindcss"

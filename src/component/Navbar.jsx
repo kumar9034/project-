@@ -17,7 +17,7 @@ const Navbar = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className='w-full h-18 bg-black/10 backdrop-blur-md fixed top-0 left-0 z-50 absolute flex items-center justify-between px-10'>
+    <div className='w-full h-18 bg-black/10 backdrop-blur-md fixed top-0 left-0 z-90 absolute flex items-center justify-between px-10'>
       <div className='w-22 z-60  flex  '>
         <img src="image-5.png" alt="" />
       </div>
