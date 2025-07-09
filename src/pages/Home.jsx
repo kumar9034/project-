@@ -5,9 +5,35 @@ import Section from '../component/Section1'
 import Section2 from '../component/Section2'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Newcard from '../component/Newcard'
+import Section5 from '../component/section5'
 
 
 gsap.registerPlugin(ScrollTrigger);
+
+const cards = [
+  {
+    name: "daily pass",
+    price: "250.000",
+    start: "starts from"
+  },
+  {
+    name: "3 day pass",
+    price: "550.000",
+    start: "start from"
+  },
+  {
+    name: "couple pakage [2tix]",
+    price: "400.000",
+    start: ""
+  },
+  {
+    name: "group pakage [5tix]",
+    price: "800.000",
+    start: ""
+  },
+]
+
 const Home = () => {
   const imageRefs = useRef([]);
   const textRefs = useRef([]);
@@ -119,15 +145,30 @@ const Home = () => {
       </div>
     </div>
 
-{/* section-4 */}
-    <div className='h-screen w-full bg-[#131313] text-white bebas-font absolute'>
-      <div className='flex justify-center items-center mt-20 '>
+    {/* section-4 */}
+    <div className='min-h-screen w-full flex flex-col pb-10 items-center bg-[#131313] text-white bebas-font'>
+
+      <div className='flex justify-center items-center mt-20 relative '>
         <h1 className='text-4xl '>get</h1>
         <img className='w-42 h-10 relative ' src="bg-text.svg" alt="" />
         <span className='w-40 h-10 text-4xl absolute z-1'>your ticket</span>
         <h1 className='text-4xl '>now</h1>
       </div>
+      <div className='absolute w-full overflow-hidden h-90 flex mt-30 gap-5 justify-center items-center '>
+        {
+          cards.map((items) => (<Newcard
+            key={items.id}
+            name={items.name}
+            price={items.price}
+            start={items.start}
+          />))
+        }
+      </div>
+      <div className="w-40 h-10 border border-[#f19b17] mt-[20rem] rounded-lg flex justify-center items-center text-xl cursor-pointer hover:bg-[#f19b17] hover:text-white">
+        See all tickets
+      </div>
     </div>
+      <Section5 />
   </>
   )
 }
