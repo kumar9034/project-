@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card from './Card'
 
 const Section2 = () => {
@@ -96,7 +96,7 @@ const Section2 = () => {
                 </div>
             </div>
             <div className="w-full absolute overflow-x-auto whitespace-nowrap scrollbar-hide pl-10 mr-10 mt-10">
-                <div className="flex  gap-4">
+                <div  className="flex  gap-4">
                     {cards.map((items) => (
                         <div key={items.id}>
                             <Card
