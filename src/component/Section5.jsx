@@ -36,7 +36,7 @@ const Section5 = () => {
                 </div>
                 </div>
                 <div className='w-[40vw] '>
-                    <img className='ml-80' src="image-34.svg" alt="" />
+                    <img className='ml-80' src="image-35.svg" alt="" />
                     <div className='flex  gap-5 mt-12 ml-40'>
                     <div className='flex mt-2 gap-8'>
                       <IoPlaySkipBackSharp color='#424242' size={25}/>

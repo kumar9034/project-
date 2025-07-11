@@ -7,6 +7,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Newcard from '../component/Newcard'
 import Section5 from '../component/section5'
+import Section6 from '../component/Section6'
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -169,6 +170,7 @@ const Home = () => {
       </div>
     </div>
       <Section5 />
+      <Section6/>
   </>
   )
 }
