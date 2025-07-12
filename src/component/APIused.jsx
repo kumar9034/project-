@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Section5 from './section5';
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa6";
 
