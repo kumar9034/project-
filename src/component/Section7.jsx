@@ -118,7 +118,7 @@ const Section7 = () => {
 
   ]
   return (
-    <div className='w-full h-auto overflow-hidden   bg-[#131313]'>
+    <div className='w-full h-auto overflow-hidden pb-20  bg-[#131313]'>
       <div className='w-full flex pl-[26rem] items-center pt-20 '>
         <img className='w-60 h-15 ' src="bg-text.svg" alt="" />
         <p className='bebas-font text-white text-[2.1rem] ml-2 absolute '>Memorable moment</p>

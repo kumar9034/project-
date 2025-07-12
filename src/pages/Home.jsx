@@ -9,6 +9,8 @@ import Newcard from '../component/Newcard'
 import Section5 from '../component/section5'
 import Section6 from '../component/Section6'
 import Section7 from '../component/Section7'
+import Footer from '../component/Footer'
+import Lineup from './Lineup'
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -173,6 +175,8 @@ const Home = () => {
       <Section5 />
       <Section6/>
       <Section7/>
+      <Footer/>
+      <Lineup/>
   </>
   )
 }
