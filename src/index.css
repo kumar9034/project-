@@ -11,5 +11,18 @@
 box {
   font-family: 'Bebas Neue', sans-serif;
 }
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-animation {
+  animation: scroll-left 30s linear infinite
+}
+
 
 @import "tailwindcss"
