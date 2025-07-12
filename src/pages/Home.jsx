@@ -1,19 +1,18 @@
 import React, { useEffect, useRef } from 'react'
 import Bg from '../component/Bg'
-import Navbar from '../component/Navbar'
-import Section from '../component/Section1'
 import Section2 from '../component/Section2'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Newcard from '../component/Newcard'
-import Section5 from '../component/section5'
+import Section5 from '../component/Section5';
 import Section6 from '../component/Section6'
 import Section7 from '../component/Section7'
 import Footer from '../component/Footer'
-import Lineup from './Lineup'
+
 
 
 gsap.registerPlugin(ScrollTrigger);
+
 
 const cards = [
   {
@@ -42,6 +41,14 @@ const Home = () => {
   const imageRefs = useRef([]);
   const textRefs = useRef([]);
   const sectionRef = useRef(null);
+
+
+  const images = [
+  '/image-1.webp',
+  '/image-2.webp',
+  '/image-6.webp',
+  '/image-3.jpg',
+];
 
   useEffect(() => {
     // Scroll-triggered parallax image motion
@@ -82,7 +89,7 @@ const Home = () => {
     }}>
     </div>
 
-    <Bg />
+    <Bg image={images} />
     <div >
       <Section2 />
       <div className='w-full h-screen bg-[#131313] flex-col mb-25'>
@@ -176,7 +183,7 @@ const Home = () => {
       <Section6/>
       <Section7/>
       <Footer/>
-      <Lineup/>
+      
   </>
   )
 }
