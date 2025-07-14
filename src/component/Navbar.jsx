@@ -23,8 +23,8 @@ const Navbar = () => {
       </div>
       <div className='lg:block hidden w-110  lg:flex gap-5  '>
         <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300  font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/'>Home</Link></p>
-        <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300  font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/'>LineUp</Link></p>
-        <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/'>Sponsor&partner</Link></p>
+        <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300  font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/lineup'>LineUp</Link></p>
+        <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/sponsorandparter'>Sponsor&partner</Link></p>
         <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/'>photoes</Link></p>
         <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/'>playlist</Link></p>
         <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/'>contactus</Link></p>

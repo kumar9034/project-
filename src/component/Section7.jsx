@@ -9,8 +9,8 @@ const Section7 = () => {
       image: 'image-51.jpeg',
       description: "tahun kemarin tahun pertama aku nonton tsp, seru banget pls! apalagi bareng temen kampus. Tahun ini pastinya nonton lgi!",
       sticker_C:"image-53.svg",
-      sticker_L:"",
-      sticker_R:"",
+      sticker_L:"null",
+      sticker_R:"null",
       hiddenl: "hidden",
       hiddenr: "hidden",
       hiddenc : ""

@@ -2,15 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Section from './Section1';
 import Navbar from './Navbar';
 
-const images = [
-  '/image-1.webp',
-  '/image-2.webp',
-  '/image-6.webp',
-  '/image-3.jpg',
-]; // Add your images here
+ // Add your images here
 
-const AutoLoopBackground = () => {
+const AutoLoopBackground = ({images =[], height}) => {
   const [current, setCurrent] = useState(0);
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,13 +18,12 @@ const AutoLoopBackground = () => {
 
   return (
     <div
-      className="w-full h-screen bg-center bg-cover "
+      className={`w-full ${height} bg-center bg-cover` }
       style={{
         backgroundImage: `url(${images[current]})`,
       }}
     >
-        <Navbar/>
-        <Section/>
+        
     </div>
   );
 };

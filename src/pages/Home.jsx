@@ -8,6 +8,8 @@ import Section5 from '../component/Section5';
 import Section6 from '../component/Section6'
 import Section7 from '../component/Section7'
 import Footer from '../component/Footer'
+import Section from '../component/Section1';
+import Navbar from '../component/Navbar';
 
 
 
@@ -43,12 +45,7 @@ const Home = () => {
   const sectionRef = useRef(null);
 
 
-  const images = [
-  '/image-1.webp',
-  '/image-2.webp',
-  '/image-6.webp',
-  '/image-3.jpg',
-];
+
 
   useEffect(() => {
     // Scroll-triggered parallax image motion
@@ -87,9 +84,15 @@ const Home = () => {
     <div className='w-full  h-screen absolute z-50' style={{
       background: 'linear-gradient(0deg, rgb(19, 19, 19) 8%, rgba(19, 19, 19, 0.6) 50%, rgba(19, 19, 19, 0.2) 100%)',
     }}>
+      <Navbar/>
+      <Section/>
     </div>
 
-    <Bg image={images} />
+    <Bg images={['/image-1.webp',
+      '/image-2.webp',
+      '/image-6.webp',
+      '/image-3.jpg',]} 
+      height={'h-screen'}/>
     <div >
       <Section2 />
       <div className='w-full h-screen bg-[#131313] flex-col mb-25'>
@@ -179,11 +182,11 @@ const Home = () => {
         See all tickets
       </div>
     </div>
-      <Section5 />
-      <Section6/>
-      <Section7/>
-      <Footer/>
-      
+    <Section5 />
+    <Section6 />
+    <Section7 />
+    <Footer />
+
   </>
   )
 }
