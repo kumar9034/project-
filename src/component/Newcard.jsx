@@ -2,7 +2,7 @@ import React from 'react'
 
 const Newcard = ({name, price, start , width}) => {
   return (
-    <div className={`w-68  h-74`}>
+    <div className={`w-68  h-66`}>
         <div className='flex'>
       <span className='w-8 mt-40 rounded-tr-[50%] rounded-br-[50%] h-8 bg-[#131313] absolute -ml-4 z-1'></span>
       <img className={`w-68 h-44 object-cover rounded-lg relative border-b border-dashed border-[#424242]` } src="image-31.svg" alt="" />

@@ -43,9 +43,6 @@ const handleChange = (event, newValue) => {
                     <div className='w-35 h-10 bg-[#f19b17] bebas-font text-xl cursor-pointer flex justify-center items-center  text-white  rounded-lg '>contact us</div>} value="1"/>
                   <Tab label={<div className='w-35 h-10 bebas-font text-xl  border-1 text-white cursor-pointer hover:bg-[#f19b17] flex justify-center items-center border-[#f19b17]  ml-4 rounded-lg  '>see previously</div>} value="2"/>
                 </TabList>
-                {/* <TabPanel value="1">
-                   <h1 className='text-white '>hii</h1>
-                </TabPanel> */}
                 <TabPanel value="2">
                 <div className='w-full h-auto bg-[#131313] '>
                   <img className='w-40 h-20 -mt-10 ml-55 absolute' src="BG-TEXT1.svg" alt="" />

@@ -6,6 +6,7 @@ import Sponsorandparter from './pages/Sponsorandparter'
 import Contact from './pages/Contact'
 import Ticket from './pages/Ticket'
 import Playlist from './pages/Playlist'
+import Photo from './pages/Photo'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
         <Route path='/Contact-us' element={<Contact/>} />
         <Route path='/ticket' element={<Ticket/>} />
         <Route path='/playlist' element={<Playlist/>} />
+        <Route path='/photo' element={<Photo/>} />
       </Routes>
     
   )
