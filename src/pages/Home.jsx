@@ -10,6 +10,7 @@ import Section7 from '../component/Section7'
 import Footer from '../component/Footer'
 import Section from '../component/Section1';
 import Navbar from '../component/Navbar';
+import { Link } from 'react-router-dom';
 
 
 
@@ -168,7 +169,7 @@ const Home = () => {
         <span className='w-40 h-10 text-4xl absolute z-1'>your ticket</span>
         <h1 className='text-4xl '>now</h1>
       </div>
-      <div className='absolute w-full overflow-hidden h-90 flex mt-30 gap-5 justify-center items-center '>
+      <div className='absolute w-full overflow-hidden pb-20 pt-20 h-90 flex mt-30 gap-5 justify-center items-center '>
         {
           cards.map((items) => (<Newcard
             key={items.id}
@@ -178,9 +179,11 @@ const Home = () => {
           />))
         }
       </div>
-      <div className="w-40 h-10 border border-[#f19b17] mt-[20rem] rounded-lg flex justify-center items-center text-xl cursor-pointer hover:bg-[#f19b17] hover:text-white">
+      <Link to="/ticket">
+      <div className="w-40 h-10 border-1 border-[#f19b17] mt-[25rem] rounded-lg flex justify-center items-center text-xl cursor-pointer hover:bg-[#f19b17] hover:text-white">
         See all tickets
       </div>
+      </Link>
     </div>
     <Section5 />
     <Section6 />

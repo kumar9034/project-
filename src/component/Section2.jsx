@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Card from './Card'
-
+import { Link } from 'react-router-dom'
 const Section2 = () => {
 
     const cards = [
@@ -69,14 +69,18 @@ const Section2 = () => {
     return (
         <div className='w-full h-screen bg-[#131313] text-white'>
             <div className='flex items-center justify-center pt-15 gap-5 '>
+                <Link to="/ticket">
                 <div className='w-50 h-15 relative z-70 bg-[#f19b17] flex justify-center items-center bebas-font text-3xl rounded-lg cursor-pointer '> buy tickets
                     <div className='w-25 h-5  absolute z-72 mt-14'><img src="BG-TEXT1.svg" alt="" />
                     </div>
                     <p className='absolute z-73 text-sm mt-16 '>almost sold out!</p>
                 </div>
+                </Link>
+                <Link to='/lineup'>
                 <div className='w-50 h-15 border-[#f19b17] border-1  bebas-font text-3xl flex text-[#f19b17] justify-center items-center rounded-lg cursor-pointer hover:bg-[#f19b17] hover:text-white '>
-                    line up
+                  line up
                 </div>
+                </Link>
             </div>
             <div className='w-full h-10 justify-center items-center  mt-10 flex gap-4'>
                 <img className='w-35 ' src=" image-9.webp" alt="" />

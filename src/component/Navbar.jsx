@@ -26,8 +26,8 @@ const Navbar = () => {
         <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300  font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/lineup'>LineUp</Link></p>
         <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/sponsor-parter'>Sponsor&partner</Link></p>
         <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/'>photoes</Link></p>
-        <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/'>playlist</Link></p>
-        <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/'>contactus</Link></p>
+        <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/playlist'>playlist</Link></p>
+        <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/contact-us'>contactus</Link></p>
       </div>
       <div className=' w-60 ml-10 flex justify-center items-center gap-3'>
         <div className='' style={{
@@ -36,7 +36,9 @@ const Navbar = () => {
 
         </div>
         <div className=' hidden lg:block'>
+          <Link to="/ticket">
           <div className='w-35 h-10  cursor-pointer border-1 border-[#f19b17] flex items-center justify-center text-[#f19b17] bebas-font text-[1.4rem] rounded-lg hover:text-white hover:bg-[#f19b17]'>buy tickets</div>
+          </Link>
         </div>
         <div className='lg:hidden block  '>
           <TiThMenu size={25} color='white' />
