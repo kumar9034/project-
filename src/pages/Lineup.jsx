@@ -225,10 +225,10 @@ const Lineup = () => {
         <BG images={['lineup/image-1.webp', 'lineup/image-2.webp', 'lineup/image-3.webp', 'lineup/image-4.webp']} height={'h-100'} />
       </div>
 
-      <div className='w-full h-auto bg-[#131313] flex flex-col items-center pt-5 pb-20'>
+      <div className='w-full absolute z-70 h-auto bg-[#131313] flex flex-col items-center pt-5 pb-20'>
         <div className='w-60 h-9 bg-white rounded-lg text-md font-[500] flex pl-3'>
           <img className='w-5 h-5 mt-2 mr-3' src="lineup/image-5.svg" alt="" />
-          <input className='w-full h-9 text-md' type="text" placeholder='Search Performer' />
+          <input className='w-full h-9 text-md outline-none' type="text" placeholder='Search Performer' />
         </div>
 
         <div className='flex pt-20 px-20'>

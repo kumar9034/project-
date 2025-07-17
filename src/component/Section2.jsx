@@ -68,38 +68,38 @@ const Section2 = () => {
 
     return (
         <div className='w-full h-screen bg-[#131313] text-white'>
-            <div className='flex items-center justify-center pt-15 gap-5 '>
+            <div className='flex items-center justify-center sm:pt-15 gap-5 '>
                 <Link to="/ticket">
-                <div className='w-50 h-15 relative z-70 bg-[#f19b17] flex justify-center items-center bebas-font text-3xl rounded-lg cursor-pointer '> buy tickets
-                    <div className='w-25 h-5  absolute z-72 mt-14'><img src="BG-TEXT1.svg" alt="" />
+                <div className='sm:w-50 w-30 sm:h-15 h-10 relative z-70 bg-[#f19b17] flex justify-center items-center bebas-font sm:text-3xl text-xl rounded-lg cursor-pointer '> buy tickets
+                    <div className='sm:w-25 w-23 h-5  absolute z-72 sm:mt-14 mt-10'><img src="BG-TEXT1.svg" alt="" />
                     </div>
-                    <p className='absolute z-73 text-sm mt-16 '>almost sold out!</p>
+                    <p className='absolute z-73 text-sm sm:mt-16 mt-12'>almost sold out!</p>
                 </div>
                 </Link>
                 <Link to='/lineup'>
-                <div className='w-50 h-15 border-[#f19b17] border-1  bebas-font text-3xl flex text-[#f19b17] justify-center items-center rounded-lg cursor-pointer hover:bg-[#f19b17] hover:text-white '>
+                <div className='sm:w-50 w-30 sm:h-15 h-10 border-[#f19b17] border-1  bebas-font sm:text-3xl text-xl flex text-[#f19b17] justify-center items-center rounded-lg cursor-pointer hover:bg-[#f19b17] hover:text-white '>
                   line up
                 </div>
                 </Link>
             </div>
             <div className='w-full h-10 justify-center items-center  mt-10 flex gap-4'>
-                <img className='w-35 ' src=" image-9.webp" alt="" />
-                <img className='w-15 h-8' src="image-10.webp" alt="" />
+                <img className='sm:w-35 w-20 ' src=" image-9.webp" alt="" />
+                <img className=' sm:w-15 w-20 h-8' src="image-10.webp" alt="" />
             </div>
 
             {/* next section  */}
 
-            <div className='mt-20 '>
+            <div className='sm:mt-20 mt-10 p-10  '>
                 <div className='flex justify-center items-center '>
-                    <p className='bebas-font text-white text-4xl'>featuring</p>
-                    <div className='w-55 ml-1 flex'>
+                    <p className='bebas-font text-white sm:text-4xl text-2xl'>featuring</p>
+                    <div className='sm:w-55 w-35 ml-1 flex'>
                         <img className='relative z-70 ' src="bg-text.svg" alt="" />
-                        <p className='bebas-font text-white z-72 text-[2.5rem] absolute ml-2 '>Extraordinary</p>
+                        <p className='bebas-font tex-white z-72 sm:text-[2.5rem] text-[1.5rem] absolute ml-2 '>Extraordinary</p>
                     </div>
-                    <p className='bebas-font text-4xl ml-2'>line up</p>
+                    <p className='bebas-font sm:text-4xl text-2xl ml-2'>line up</p>
                 </div>
             </div>
-            <div className="w-full absolute overflow-x-auto whitespace-nowrap scrollbar-hide pl-10 mr-10 mt-10">
+            <div className="w-full absolute overflow-x-auto whitespace-nowrap scrollbar-hide pl-5 mr-5 mt-10">
                 <div  className="flex  gap-4">
                     {cards.map((items) => (
                         <div key={items.id}>

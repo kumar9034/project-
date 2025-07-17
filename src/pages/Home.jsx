@@ -85,24 +85,24 @@ const Home = () => {
     <div className='w-full  h-screen absolute z-50' style={{
       background: 'linear-gradient(0deg, rgb(19, 19, 19) 8%, rgba(19, 19, 19, 0.6) 50%, rgba(19, 19, 19, 0.2) 100%)',
     }}>
-      <Navbar/>
-      <Section/>
+      <Navbar />
+      <Section />
     </div>
 
     <Bg images={['/image-1.webp',
       '/image-2.webp',
       '/image-6.webp',
-      '/image-3.jpg',]} 
-      height={'h-screen'}/>
+      '/image-3.jpg',]}
+      height={'h-screen'} />
     <div >
       <Section2 />
-      <div className='w-full h-screen bg-[#131313] flex-col mb-25'>
+      <div className='max-w-full h-screen bg-[#131313] flex-col mb-25'>
         <div className='flex justify-center items-center '>
-          <div className='w-40 text-[#f19b17] mt-30 bebas-font h-10 border-[#f19b17] text-[1.4rem] cursor-pointer hover:bg-[#f19b17] hover:text-white rounded-lg flex justify-center items-center border-1 '>see all line up</div>
+          <div className='w-40 text-[#f19b17] sm:mt-30 mt-10 bebas-font h-10 border-[#f19b17] text-[1.4rem] cursor-pointer hover:bg-[#f19b17] hover:text-white rounded-lg flex justify-center items-center border-1 '>see all line up</div>
         </div>
         <div
           ref={sectionRef}
-          className="w-full h-full overflow-hidden flex mt-20 px-20 justify-between relative"
+          className="w-full h-full overflow-hidden flex mt-20 sm:px-20 px-0 justify-between relative"
           style={{
             background:
               "linear-gradient(180deg, rgb(19, 19, 19) 0%, #1a1a1a 50%, rgb(19, 19, 19) 100%)",
@@ -110,12 +110,12 @@ const Home = () => {
         >
           {[["image-23.jpg", "image-24.jpg"], ["image-25.jpg", "image-26.jpg"], ["image-27.jpg", "image-28.jpg"]].map(
             (pair, colIdx) => (
-              <div key={colIdx}>
+              <div key={colIdx} className=''>
                 {pair.map((src, idx) => (
                   <div
                     key={idx}
                     ref={(el) => (imageRefs.current[colIdx * 2 + idx] = el)}
-                    className={`h-50 w-33 ${idx !== 0 ? "ml-10 " : ""} bg-red-300 relative opacity-40`}
+                    className={`sm:h-50 h-40  sm:w-33 w-25 ${idx !== 0 ? "sm:ml-10 ml-3 " : "0"} bg-red-300 relative opacity-40`}
                   >
                     <img className="h-50 object-cover" src={src} alt="" />
                   </div>
@@ -124,38 +124,51 @@ const Home = () => {
             )
           )}
 
-          <div className="w-[60vw] h-50 flex-col ml-[20vw] absolute mt-10 z-49">
+          <div className="sm:w-[60vw] w-[85vw] flex flex-col items-center  sm:ml-[20vw] ml-[5vw] absolute mt-10 z-49">
             {[
               <>
-                Good Vibes{" "}
-                <span className="w-30 h-5 ml-3 flex mr-3">
-                  <img className="w-27 h-13 rounded-4xl object-cover" src="image-29.jpg" alt="" />
-                </span>{" "}
-                Great Music,
-              </>,
-              <>
-                and Unforgettable{" "}
-                <span className="w-30 h-5 ml-3 flex mr-3">
-                  <img className="w-27 h-13 rounded-4xl object-cover" src="image-30.jpg" alt="" />
-                </span>{" "}
-                Memories —
-              </>,
-              <>
-                <span className="w-30 -ml-10 h-5 flex mr-3">
-                  <img className="w-32 h-13 object-cover" src="image-4.png" alt="" />
+                <span className="inline">GOOD VIBES,</span>
+                <span className="inline-block mx-2">
+                  <img
+                    src="image-29.jpg"
+                    alt=""
+                    className="w-16 sm:w-24 h-10 sm:h-14 object-cover rounded-2xl align-middle"
+                  />
                 </span>
-                3 DAYS, 6 STAGES, 100+ PERFORMANCES.
+                <span className="inline">GREAT MUSIC,</span>
               </>,
-            ].map((textLine, i) => (
+              <>
+                <span className="inline">AND UNFORGETTABLE</span>
+                <span className="inline-block mx-2">
+                  <img
+                    src="image-30.jpg"
+                    alt=""
+                    className="w-16 sm:w-24 h-10 sm:h-14 object-cover rounded-2xl align-middle"
+                  />
+                </span>
+                <span className="inline">MEMORIES —</span>
+              </>,
+              <>
+                <span className="inline-block -ml-2 sm:-ml-5 mr-3">
+                  <img
+                    src="image-4.png"
+                    alt=""
+                    className="w-24 sm:w-32 h-12 object-contain"
+                  />
+                </span>
+                <span className="inline text-center">3 DAYS, 6 STAGES, 100+ PERFORMANCES.</span>
+              </>,
+            ].map((line, i) => (
               <h1
                 key={i}
-                className="bebas-font text-white text-5xl mt-5 flex"
                 ref={(el) => (textRefs.current[i] = el)}
+                className="bebas-font text-white text-[27px] sm:text-4xl text-center  leading-tight"
               >
-                {textLine}
+                {line}
               </h1>
             ))}
           </div>
+
         </div>
       </div>
     </div>
@@ -163,13 +176,13 @@ const Home = () => {
     {/* section-4 */}
     <div className='min-h-screen w-full flex flex-col pb-10 items-center bg-[#131313] text-white bebas-font'>
 
-      <div className='flex justify-center items-center mt-20 relative '>
+      <div className='flex justify-center items-center sm:mt-20 mt-5 relative '>
         <h1 className='text-4xl '>get</h1>
         <img className='w-42 h-10 relative ' src="bg-text.svg" alt="" />
         <span className='w-40 h-10 text-4xl absolute z-1'>your ticket</span>
         <h1 className='text-4xl '>now</h1>
       </div>
-      <div className='absolute w-full overflow-hidden pb-20 pt-20 h-90 flex mt-30 gap-5 justify-center items-center '>
+      <div className='absolute w-full overflow-hidden pb-20 pt-20 px-15 overflow-x-auto whitespace-nowrap scrollbar-hide  h-90 flex mt-30 gap-5  '>
         {
           cards.map((items) => (<Newcard
             key={items.id}
@@ -180,9 +193,9 @@ const Home = () => {
         }
       </div>
       <Link to="/ticket">
-      <div className="w-40 h-10 border-1 border-[#f19b17] mt-[25rem] rounded-lg flex justify-center items-center text-xl cursor-pointer hover:bg-[#f19b17] hover:text-white">
-        See all tickets
-      </div>
+        <div className="w-40 h-10 border-1 z-90 relative mt-[30rem]  border-[#f19b17] rounded-lg flex justify-center items-center text-xl cursor-pointer hover:bg-[#f19b17] hover:text-white">
+          See all tickets
+        </div>
       </Link>
     </div>
     <Section5 />

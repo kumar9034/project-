@@ -15,7 +15,7 @@ const APIused = () => {
             const options = {
                 method: 'GET',
                 headers: {
-                    'x-rapidapi-key': '4491fe8b02msh6de10e0b55a0a80p1dccfajsn2e46febdfb99',
+                    'x-rapidapi-key': '03f9773500mshcb3ebcfab157be7p10df69jsna130b176358d',
                     'x-rapidapi-host': 'spotify81.p.rapidapi.com'
                 }
             };
@@ -54,7 +54,7 @@ const APIused = () => {
         <>
         <div className=''>
             {track.map((items) => (
-                <div className='w-full h-10 hover:bg-[#131313] cursor-pointer  flex justify-between px-8  '
+                <div className='w-full h-10 hover:bg-[#1f1f1f] cursor-pointer  flex justify-between px-8  '
                 onClick={() => togglePlay(items)}>
                     <div className='flex gap-3'>
                         <div className='flex mt-2 mr-2 '>
