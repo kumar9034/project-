@@ -6,10 +6,10 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()
   ],
-  build: {
-    outDir: 'dist',
-  },
-  server: {
-    historyApiFallback: true
-  }
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ]
 })
