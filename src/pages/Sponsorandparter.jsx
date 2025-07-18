@@ -19,13 +19,13 @@ const handleChange = (event, newValue) => {
       }}>
         <Navbar />
         <div className='w-full h-auto  pb-20 flex flex-col items-center pt-50   '>
-          <h1 className='bebas-font text-5xl text-white '>Sponsor & Partnership</h1>
-          <p className='text-[#b6b6b6]'>Thank you to our Sponsor & Partnership for Supporting The Sounds Project</p>
+          <h1 className='bebas-font sm:text-5xl text-4xl text-white '>Sponsor & Partnership</h1>
+          <p className='text-[#b6b6b6] text-center'>Thank you to our Sponsor & Partnership for Supporting The Sounds Project</p>
 
-          <div className=' w-[42.5rem] ml-15 mt-30 h-20   '>
+          <div className=' w-[45vw] ml-[8vw] mt-30 h-20   '>
             <div>
-              <img className='w-40 h-10 ml-55 absolute -mt-5' src="BG-TEXT1.svg" alt="" />
-              <p className='bebas-font text-2xl text-white absolute z-1 -m-3 ml-60'>main sponsor</p>
+              <img className='sm:w-[20vw] w-50 h-10 ml-[12vw] absolute -mt-5' src="BG-TEXT1.svg" alt="" />
+              <p className='bebas-font text-3xl text-white absolute z-1 -mt-4 ml-[17vw]'>main sponsor</p>
             </div>
             <div className='flex '>
               <img className=' object-cover w-[38.3rem] h-[11.8rem] rounded-lg  ' src="sponsorandparter/image-2.svg" alt="" />
@@ -37,11 +37,11 @@ const handleChange = (event, newValue) => {
           
           <Box sx={{ width:"100%", backgroundColor: "#131313", typography:'body1', pt: 10, }}>
             <TabContext value={value}  >
-              <Box sx={{  width:"50%", margin:'auto',  }}>
-                <TabList TabIndicatorProps={{ style: { display: 'none' } }} onChange={handleChange} sx={{display:"flex", marginLeft : 20}}>
-                  <Tab  component={Link} to="/" label={
-                    <div className='w-35 h-10 bg-[#f19b17] bebas-font text-xl cursor-pointer flex justify-center items-center  text-white  rounded-lg '>contact us</div>} value="1"/>
-                  <Tab label={<div className='w-35 h-10 bebas-font text-xl  border-1 text-white cursor-pointer hover:bg-[#f19b17] flex justify-center items-center border-[#f19b17]  ml-4 rounded-lg  '>see previously</div>} value="2"/>
+              <Box sx={{  width:"100%", margin:'auto',  }}>
+                <TabList TabIndicatorProps={{ style: { display: 'none' } }} onChange={handleChange} className='sm:ml-[37vw] ml-[10vw]'>
+                  <Tab className='w-30 '  component={Link} to="/" label={
+                    <div className='w-30 h-10 bg-[#f19b17] bebas-font text-xl cursor-pointer flex justify-center items-center  text-white  rounded-lg '>contact us</div>} value="1"/>
+                  <Tab className='w-35' label={<div className='w-30 h-10 bebas-font text-xl  border-1 text-white cursor-pointer hover:bg-[#f19b17] flex justify-center items-center border-[#f19b17]  ml-4 rounded-lg  '>see previously</div>} value="2"/>
                 </TabList>
                 <TabPanel value="2">
                 <div className='w-full h-auto bg-[#131313] '>

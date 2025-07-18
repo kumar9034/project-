@@ -1,43 +1,73 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='h-[25rem] w-full bg-[#131313] pt-8 pl-19 pr-19'>
-      <div className='flex gap-5 '>
-        <img className='w-32 h-14' src="image-4.png" alt="" />
-        <div>
-            <p className='bebas-font text-[25px] text-white -mt-8 '>8<span className='text-7xl text-red-900 mr-2 ml-2'>.</span>9<span className='text-7xl text-red-900 mr-2 ml-2'>.</span> IO Agustus 2025</p>
-            <p className='bebas-font text-[25px] text-white -mt-10'>ECOVENTION & ECOPARK ANCOL<span className='text-7xl text-red-900 mr-2 ml-2'>.</span>JAKARTA, INDONESIA</p>
+    <div className='w-full bg-[#131313] px-4 sm:px-12 py-10'>
+      {/* Top Section */}
+      <div className='flex flex-col sm:flex-row sm:items-start gap-4'>
+        <img className='w-32 h-14' src="image-4.png" alt="Logo" />
+        <div className='text-white'>
+          <p className='bebas-font text-2xl'>
+            8<span className='text-4xl text-red-900 mx-4'>.</span>
+            9<span className='text-4xl text-red-900 mx-2'>.</span>
+            10 Agustus 2025
+          </p>
+          <p className='bebas-font text-2xl'>
+            Ecovention & Ecopark Ancol
+            <span className='text-4xl text-red-900 mx-2'>.</span>
+            Jakarta, Indonesia
+          </p>
         </div>
       </div>
-      <div>
-        <h1 className='text-5xl bebas-font text-white mt-4'>Where the dreamers go. live concert matters.</h1>
+
+      {/* Tagline */}
+      <div className='mt-6'>
+        <h1 className='text-4xl bebas-font text-white leading-snug text-center sm:text-left'>
+          Where the dreamers go. <br className='block sm:hidden' />
+          Live concert matters.
+        </h1>
       </div>
-      <div className='w-full border-1 border-[#cccccc] mt-6 '></div>
-      <div className='flex justify-between pt-5 '>
-        <div className='flex flex-wrap leading-none  gap-y-1 gap-x-5 w-[50%]' >
-        <p className='bebas-font text-[#ffffff] text-[21px] hover:text-[#f19b17] flex'>Home <img className='w-6 h-6 ' src="image-65.svg" alt="" /></p>
-        <p className='bebas-font text-[#ffffff] text-[21px] hover:text-[#f19b17] flex'>Become press<img className='w-6 h-6 ' src="image-65.svg" alt="" /></p>
-        <p className='bebas-font text-[#ffffff] text-[21px] hover:text-[#f19b17] flex'>become a sponsor & partners <img className='w-6 h-6 ' src="image-65.svg" alt="" /></p>
-        <p className='bebas-font text-[#ffffff] text-[21px] hover:text-[#f19b17] flex'>contact us <img className='w-6 h-6 ' src="image-65.svg" alt="" /></p>
+
+      <hr className='border-t border-[#cccccc] my-6' />
+
+      {/* Links & Socials */}
+      <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6'>
+        {/* Navigation Links */}
+        <div className='flex flex-wrap gap-x-6 gap-y-2 sm:w-[60%]'>
+          {[
+            'Home',
+            'Become press',
+            'Become a sponsor & partners',
+            'Contact us'
+          ].map((text, index) => (
+            <p key={index} className='bebas-font text-white text-[18px] hover:text-[#f19b17] flex items-center gap-1'>
+              {text}
+              <img className='w-4 h-4' src="image-65.svg" alt="arrow" />
+            </p>
+          ))}
         </div>
-        <div className='flex gap-4 items-center'>
-            <p className='bebas-font text-[#cccccc] text-[18px]'>follow us</p>
-            <img className='w-7 h-7' src="image-66.svg" alt="" />
-            <img className='w-7 h-7' src="image-67.svg" alt="" />
-            <img className='w-7 h-7' src="image-68.svg" alt="" />
-            <img className='w-7 h-7' src="image-69.svg" alt="" />
-            <img className='w-7 h-7' src="image-70.svg" alt="" />
-            <img className='w-7 h-7' src="image-71.svg" alt="" />
+
+        {/* Social Icons */}
+        <div className='flex flex-wrap gap-3 items-center'>
+          <p className='bebas-font text-[#cccccc] text-[18px] w-full sm:w-auto'>Follow us</p>
+          {['66', '67', '68', '69', '70', '71'].map((num, index) => (
+            <img key={index} className='w-6 h-6' src={`image-${num}.svg`} alt={`social-${num}`} />
+          ))}
         </div>
       </div>
-      <div className='w-full border-1 border-[#cccccc] mt-6 '></div>
-      <div className='flex justify-between items-center h-27 '>
-            <p className='bebas-font text-white text-md '>© 2014 - 2025 THESOUNDSPROJECT&CO</p>
-            <p className='bebas-font text-white text-lg gap-2 flex '>member of <img className='w-10 h-7' src="image-72.svg" alt="" /></p>
+
+      <hr className='border-t border-[#cccccc] my-6' />
+
+      {/* Bottom Section */}
+      <div className='flex flex-col sm:flex-row justify-between  text-white text-sm'>
+        <p className='bebas-font  text-left'>© 2014 - 2025 THESOUNDSPROJECT&CO</p>
+        <p className='bebas-font flex items-center gap-2 mt-2 sm:mt-0'>
+          Member of
+          <img className='w-10 h-6' src="image-72.svg" alt="APMI" />
+        </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

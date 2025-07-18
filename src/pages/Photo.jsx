@@ -229,7 +229,7 @@ const Photo = () => {
                     background: 'linear-gradient(0deg, rgb(19, 19, 19) 8%, rgba(19, 19, 19, 0.6) 50%, rgba(19, 19, 19, 0.2) 100%)',
                 }}>
                     <div className='flex flex-col items-center mt-45'>
-                        <div className='flex'>
+                        <div className='flex flex-wrap  ml-10'>
                             <span className='flex absolute text-5xl text-white bebas-font ml-7 mt-1 '> memorable</span>
                             <img className='w-60 h-13 ' src="bg-text.svg" alt="" />
                             <h1 className='text-white text-5xl bebas-font '>moment at </h1>
@@ -240,7 +240,7 @@ const Photo = () => {
                 </div>
                 <Bg images={["photo/image-1.webp"]} height={"h-100"} />
 
-                <div className='w-full flex flex-wrap  justify-center itmes-center gap-10 p-10 h-auto'>
+                <div className='w-full flex flex-wrap  justify-center itmes-center sm:gap-10 gap-3 sm:p-10 p-5 h-auto'>
                     {cards.map((items) => (
                         <div key={items.id} onClick={() => setSelecte(items)} className="cursor-pointer">
                             <Card4

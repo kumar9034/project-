@@ -2,18 +2,18 @@ import React from 'react'
 
 const Card4 = ( {image ,description , sticker_L, sticker_R, sticker_C , name , hiddenl,hiddenr, hiddenc}) => {
     return (
-        <div className='relative w-75 h-90 hover:rotate-1'>
+        <div className='relative sm:w-75 w-[40vw]  sm:h-90 h-[43vh] hover:rotate-1'>
             {/* Decorative top-left sticker */}
-            <img className={`w-25 h-15 -ml-8 -mt-5 absolute ${hiddenl}  z-10`} src={sticker_L} alt="" />
+            <img className={`sm:w-25 w-17  sm:h-15 h-12 sm:-ml-8 -ml-7 sm:-mt-5 -mt-3 absolute ${hiddenl}  z-10`} src={sticker_L} alt="" />
             
             {/* Decorative top-center sticker */}
-            <img className={`w-23 ml-23 -mt-7 h-12 absolute ${hiddenc}   z-10`} src={sticker_C} alt="" />
+            <img className={`sm:w-23 w-15 sm:ml-23 ml-10 sm:-mt-7 -mt-3  sm:h-12 h-8 absolute ${hiddenc}   z-10`} src={sticker_C} alt="" />
 
             {/* Main card content */}
-            <div className='w-75 h-90 p-2 bg-white '>
-                <div className='w-71 h-88 flex flex-col'>
-                    <img className='w-71 h-56 object-cover' src={image} alt="" />
-                    <p className='text-[12px] h-20 mt-3 font-[400] leading-4 break-words whitespace-normal '>
+            <div className='sm:w-75 w-[40vw] sm:h-90 h-[43vh] p-2 bg-white '>
+                <div className='sm:w-71 w-[40vw] sm:h-88 h-58 flex flex-col'>
+                    <img className='sm:w-71 w-[35vw] sm:h-56 h-30 object-cover' src={image} alt="" />
+                    <p className='sm:text-[12px] text-[10px] h-[15vh] mt-3 font-[400] leading-4 break-words whitespace-normal '>
                         {description}
                     </p>
                     <div className='flex gap-2'>
@@ -23,7 +23,7 @@ const Card4 = ( {image ,description , sticker_L, sticker_R, sticker_C , name , h
                 </div>
 
                 {/* Bottom-right corner sticker */}
-                <img className={`w-23 h-14 absolute -bottom-3 -right-9 z-10 ${hiddenr}  `} src={sticker_R} alt="" />
+                <img className={`sm:w-23 w-17 sm:h-14 h-10 absolute sm:-bottom-3 -bottom-2 sm:-right-9 -right-5 z-10 ${hiddenr}  `} src={sticker_R} alt="" />
             </div>
         </div>
     )
