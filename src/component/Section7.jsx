@@ -127,7 +127,7 @@ const Section7 = () => {
             alt="Brush Background"
             className="w-[12rem] sm:w-[20rem] h-auto"
           />
-          <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bebas-font text-white text-[1.5rem] sm:text-[2.5rem] whitespace-nowrap">
+          <p className="absolute -mt-10 ml-5 sm:-mt-16 bebas-font text-white text-[1.5rem] sm:text-[2.5rem] whitespace-nowrap">
             MEMORABLE MOMENT
           </p>
         </div>

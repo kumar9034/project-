@@ -148,7 +148,7 @@ const Section6 = () => {
                 sx={{ flex: 1 }}
               />
               <Tab
-                label={<span className='bebas-font uppercase text-gray-400 text-xl sm:text-3xl'>Live from the Fest</span>}
+                label={<span className='bebas-font uppercase text-white  text-xl sm:text-3xl'>Live from the Fest</span>}
                 value="2"
                 sx={{ flex: 1 }}
               />
