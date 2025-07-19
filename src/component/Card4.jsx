@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card4 = ( {image ,description , sticker_L, sticker_R, sticker_C , name , hiddenl,hiddenr, hiddenc}) => {
     return (
-        <div className='relative sm:w-75 w-[40vw]  sm:h-90 h-[43vh] hover:rotate-1'>
+        <div className='relative sm:w-75 w-[40vw]  sm:h-90 h-[45vh] hover:rotate-1'>
             {/* Decorative top-left sticker */}
             <img className={`sm:w-25 w-17  sm:h-15 h-12 sm:-ml-8 -ml-7 sm:-mt-5 -mt-3 absolute ${hiddenl}  z-10`} src={sticker_L} alt="" />
             
@@ -10,15 +10,15 @@ const Card4 = ( {image ,description , sticker_L, sticker_R, sticker_C , name , h
             <img className={`sm:w-23 w-15 sm:ml-23 ml-10 sm:-mt-7 -mt-3  sm:h-12 h-8 absolute ${hiddenc}   z-10`} src={sticker_C} alt="" />
 
             {/* Main card content */}
-            <div className='sm:w-75 w-[40vw] sm:h-90 h-[43vh] p-2 bg-white '>
+            <div className='sm:w-75 w-[40vw] sm:h-90 h-[45vh] p-2 bg-white '>
                 <div className='sm:w-71 w-[40vw] sm:h-88 h-58 flex flex-col'>
                     <img className='sm:w-71 w-[35vw] sm:h-56 h-30 object-cover' src={image} alt="" />
-                    <p className='sm:text-[12px] text-[10px] h-[15vh] mt-3 font-[400] leading-4 break-words whitespace-normal '>
+                    <p className='sm:text-[12px] text-[9px] h-[15vh] mt-3 font-[400] leading-4 break-words whitespace-normal '>
                         {description}
                     </p>
                     <div className='flex gap-2'>
                         <img className='w-5 h-5' src="image-52.webp" alt="" />
-                        <p className='bebas-font text-md font-[800]'>@{name}</p>
+                        <p className='bebas-font sm:text-md text-sm  font-[800]'>@{name}</p>
                     </div>
                 </div>
 
