@@ -14,7 +14,7 @@ const Section5 = () => {
           <h1 className='bebas-font sm:text-5xl text-[2.5rem]  text-white'>official playlist of</h1>
           <span><img className='w-30 h-12 ml-3 inline-block ml-16' src="image-4.png" alt="" /></span>
         </div>
-        <p className='bebas-font text-lg text-[#616161] mt-2'>Listen, learn and do practice for 3 days🎶</p>
+        <p className='bebas-font text-lg text-center text-[#616161] mt-2'>Listen, learn and do practice for 3 days🎶</p>
       </div>
       <div className="w-full min-h-screen  relative">
         <img

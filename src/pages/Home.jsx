@@ -82,7 +82,7 @@ const Home = () => {
 
   }, []);
   return (<>
-    <div className='w-full  h-screen absolute z-50' style={{
+    <div className='w-full  h-[100vh] absolute z-50' style={{
       background: 'linear-gradient(0deg, rgb(19, 19, 19) 8%, rgba(19, 19, 19, 0.6) 50%, rgba(19, 19, 19, 0.2) 100%)',
     }}>
       <Navbar />
@@ -93,12 +93,12 @@ const Home = () => {
       '/image-2.webp',
       '/image-6.webp',
       '/image-3.jpg',]}
-      height={'h-screen'} />
+      height={'h-[100vh]'} />
     <div >
       <Section2 />
-      <div className='max-w-full h-screen bg-[#131313] flex-col mb-25'>
+      <div className='max-w-full sm:h-[140vh] h-[100vh]   bg-[#131313] flex-col '>
         <div className='flex justify-center items-center '>
-          <div className='w-40 text-[#f19b17] sm:mt-30 mt-10 bebas-font h-10 border-[#f19b17] text-[1.4rem] cursor-pointer hover:bg-[#f19b17] hover:text-white rounded-lg flex justify-center items-center border-1 '>see all line up</div>
+          <div className='w-40 text-[#f19b17] sm:mt-50 mt-5 bebas-font h-10 border-[#f19b17] text-[1.4rem] cursor-pointer hover:bg-[#f19b17] hover:text-white rounded-lg flex justify-center items-center border-1 '>see all line up</div>
         </div>
         <div
           ref={sectionRef}
@@ -174,15 +174,15 @@ const Home = () => {
     </div>
 
     {/* section-4 */}
-    <div className='min-h-screen w-full flex flex-col pb-10 items-center bg-[#131313] text-white bebas-font'>
+    <div className='min-h-screen w-full flex flex-col pb-10  items-center bg-[#131313] text-white bebas-font'>
 
-      <div className='flex justify-center items-center sm:mt-20 mt-5 relative '>
+      <div className='flex justify-center items-center   relative '>
         <h1 className='text-4xl '>get</h1>
         <img className='w-42 h-10 relative ' src="bg-text.svg" alt="" />
         <span className='w-40 h-10 text-4xl absolute z-1'>your ticket</span>
         <h1 className='text-4xl '>now</h1>
       </div>
-      <div className='absolute w-full overflow-hidden pb-20 pt-20 px-15 overflow-x-auto whitespace-nowrap scrollbar-hide  h-90 flex mt-30 gap-5  '>
+      <div className='absolute w-full overflow-hidden pb-20 sm:pt-20 pt-5 px-5 overflow-x-auto whitespace-nowrap scrollbar-hide  h-90 flex mt-30 gap-5  '>
         {
           cards.map((items) => (<Newcard
             key={items.id}

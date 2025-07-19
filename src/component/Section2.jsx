@@ -67,7 +67,7 @@ const Section2 = () => {
     ]
 
     return (
-        <div className='w-full h-screen bg-[#131313] text-white'>
+        <div className='w-full h-[90vh] bg-[#131313] text-white'>
             <div className='flex items-center justify-center sm:pt-15 gap-5 '>
                 <Link to="/ticket">
                 <div className='sm:w-50 w-30 sm:h-15 h-10 relative z-70 bg-[#f19b17] flex justify-center items-center bebas-font sm:text-3xl text-xl rounded-lg cursor-pointer '> buy tickets
@@ -89,17 +89,17 @@ const Section2 = () => {
 
             {/* next section  */}
 
-            <div className='sm:mt-20 mt-10 p-10  '>
+            <div className='sm:mt-20 mt-10 p-8  '>
                 <div className='flex justify-center items-center '>
                     <p className='bebas-font text-white sm:text-4xl text-2xl'>featuring</p>
                     <div className='sm:w-55 w-35 ml-1 flex'>
                         <img className='relative z-70 ' src="bg-text.svg" alt="" />
                         <p className='bebas-font tex-white z-72 sm:text-[2.5rem] text-[1.5rem] absolute ml-2 '>Extraordinary</p>
                     </div>
-                    <p className='bebas-font sm:text-4xl text-2xl ml-2'>line up</p>
+                    <p className='bebas-font sm:text-4xl  text-2xl ml-2'>line up</p>
                 </div>
             </div>
-            <div className="w-full absolute overflow-x-auto whitespace-nowrap scrollbar-hide pl-5 mr-5 mt-10">
+            <div className="w-full  absolute overflow-x-auto whitespace-nowrap scrollbar-hide pl-5 mr-5 mt-10">
                 <div  className="flex  gap-4">
                     {cards.map((items) => (
                         <div key={items.id}>
