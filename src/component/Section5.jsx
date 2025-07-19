@@ -66,7 +66,7 @@ const Section5 = () => {
                   />
               </div>
             </div>
-            <div className=' w-full sm:h-[59vh] h-[40vh]  overflow-y-auto whitespace-nowrap scrollbar-hide'>
+            <div className=' w-full sm:h-[59vh] h-[45vh]  overflow-y-auto whitespace-nowrap scrollbar-hide'>
 
             <APIused/>
             </div>
