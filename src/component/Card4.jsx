@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card4 = ( {image ,description , sticker_L, sticker_R, sticker_C , name , hiddenl,hiddenr, hiddenc}) => {
     return (
-        <div className='relative sm:w-75 w-[40vw]  sm:h-90 h-[45vh] hover:rotate-1'>
+        <div className='relative sm:w-75 w-[40vw]  sm:h-90 h-63'>
             {/* Decorative top-left sticker */}
             <img className={`sm:w-25 w-17  sm:h-15 h-12 sm:-ml-8 -ml-7 hidden lg:hidden sm:-mt-5 -mt-3 absolute ${hiddenl}  z-10`} src={sticker_L} alt="" />
             
