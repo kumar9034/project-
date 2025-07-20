@@ -36,7 +36,7 @@ const Navbar = () => {
   const DrawerList = (
 
     <Box sx={{ width: '90vw', backgroundColor: "#131313", height: "100%" }} role="presentation" onClick={toggleDrawer(false)}>
-      <div className='flex justify-between bg-[#1f1d1d] pb-6 border-[#f19b17] border-y-1'><img className='w-30 h-15 mt-5 ml-5' src="image-4.png" alt="" />
+      <div className='flex justify-between bg-[#1f1d1d] h-auto pb-6 border-[#f19b17] border-y-1'><img className='w-30 h-15 mt-5 ml-5' src="image-4.png" alt="" />
         <div className='flex gap-3 mt-10'>
           <img className='w-25 h-6  ' src="image-7.png" alt="" />
           <IoClose color='white' size={30} />
@@ -44,8 +44,7 @@ const Navbar = () => {
       </div>
       <List>
         <ListItem >
-          <div className='flex-col px-5 '>
-          <div className='w-70 border-1 border-[#262626]'></div>
+          <div className='flex-col px-5   '>
           <Link to="/">
           <button className='mt-4 bebas-font text-2xl  text-white mb-4 cursor-pointer '>home </button>
           </Link>

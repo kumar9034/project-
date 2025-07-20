@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Card4 = ( {image ,description , sticker_L, sticker_R, sticker_C , name , hiddenl,hiddenr, hiddenc}) => {
+    
     return (
         <div className='relative sm:w-75 w-[40vw]  sm:h-90 h-63'>
             {/* Decorative top-left sticker */}

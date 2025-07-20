@@ -15,8 +15,8 @@ const APIused = () => {
             const options = {
                 method: 'GET',
                 headers: {
-                    // 'x-rapidapi-key': '03f9773500mshcb3ebcfab157be7p10df69jsna130b176358d',
-                    // 'x-rapidapi-host': 'spotify81.p.rapidapi.com'
+                    'x-rapidapi-key': '03f9773500mshcb3ebcfab157be7p10df69jsna130b176358d',
+                    'x-rapidapi-host': 'spotify81.p.rapidapi.com'
                 }
             };
 

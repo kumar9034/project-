@@ -22,15 +22,15 @@ const handleChange = (event, newValue) => {
           <h1 className='bebas-font sm:text-5xl text-4xl text-white '>Sponsor & Partnership</h1>
           <p className='text-[#b6b6b6] text-center'>Thank you to our Sponsor & Partnership for Supporting The Sounds Project</p>
 
-          <div className=' w-[45vw] ml-[8vw] mt-30 h-20   '>
+          <div className=' sm:w-[45vw] w-40 sm:ml-[8vw] ml-5 mt-30 h-20   '>
             <div>
-              <img className='sm:w-[20vw] w-50 h-10 ml-[12vw] absolute -mt-5' src="BG-TEXT1.svg" alt="" />
-              <p className='bebas-font text-3xl text-white absolute z-1 -mt-4 ml-[17vw]'>main sponsor</p>
+              <img className='sm:w-[20vw] w-30 h-10 sm:ml-[12vw] ml-5 absolute -mt-5' src="BG-TEXT1.svg" alt="" />
+              <p className='bebas-font sm:text-3xl text-lg text-white absolute z-1 -mt-4 sm:ml-[17vw] ml-10'>main sponsor</p>
             </div>
             <div className='flex '>
-              <img className=' object-cover w-[38.3rem] h-[11.8rem] rounded-lg  ' src="sponsorandparter/image-2.svg" alt="" />
-              <img className='w-50 h-10 absolute  ml-20 mt-18 z-2 ' src="image-7.png" alt="" />
-              <img className='w-30 h-15 absolute ml-90 mt-15 z-1' src="image-8.png" alt="" />
+              <img className=' object-cover sm:w-[38.3rem] w-60 h-[11.8rem] rounded-lg  ' src="sponsorandparter/image-2.svg" alt="" />
+              <img className='sm:w-50 w-25  h-10 absolute  sm:ml-20 ml-8 sm:mt-18 mt-10 z-2 ' src="image-7.png" alt="" />
+              <img className='sm:w-30 w-15 h-15 absolute sm:ml-90 ml-13 sm:mt-15 mt-28 z-1' src="image-8.png" alt="" />
             </div>
           </div>
       </div>
@@ -39,20 +39,20 @@ const handleChange = (event, newValue) => {
             <TabContext value={value}  >
               <Box sx={{  width:"100%", margin:'auto',  }}>
                 <TabList TabIndicatorProps={{ style: { display: 'none' } }} onChange={handleChange} className='sm:ml-[37vw] ml-[10vw]'>
-                  <Tab className='w-30 '  component={Link} to="/" label={
+                  <Tab className='w-30 '  component={Link} to="/contact-us" label={
                     <div className='w-30 h-10 bg-[#f19b17] bebas-font text-xl cursor-pointer flex justify-center items-center  text-white  rounded-lg '>contact us</div>} value="1"/>
                   <Tab className='w-35' label={<div className='w-30 h-10 bebas-font text-xl  border-1 text-white cursor-pointer hover:bg-[#f19b17] flex justify-center items-center border-[#f19b17]  ml-4 rounded-lg  '>see previously</div>} value="2"/>
                 </TabList>
                 <TabPanel value="2">
-                <div className='w-full h-auto bg-[#131313] '>
-                  <img className='w-40 h-20 -mt-10 ml-55 absolute' src="BG-TEXT1.svg" alt="" />
-                  <p className='text-xl bebas-font text-white absolute ml-58 -mt-3'>SUPPORTING SPONSOR</p>
-                  <img className='w-[30rem] h-60 mt-10 ml-15 absolute ' src="sponsorandparter/image-3.webp" alt="" />
-                    <img className='w-[40rem] h-80 mt-10' src="sponsorandparter/image-2.svg" alt="" />
+                <div className='w-full h-auto bg-[#131313] flex flex-col items-center pt-10'>
+                  <img className='w-40 h-20  ml-5 absolute mt-15 sm:mt-0' src="BG-TEXT1.svg" alt="" />
+                  <p className='text-xl bebas-font text-white absolute ml-5 mt-22'>SUPPORTING SPONSOR</p>
+                  <img className='sm:w-[30rem] w-80 sm:h-60 h-40 sm:mt-20  mt-30 absolute ' src="sponsorandparter/image-3.webp" alt="" />
+                    <img className='sm:w-[40rem] h-80 mt-10' src="sponsorandparter/image-2.svg" alt="" />
                 <div className=' pt-10'>
-                  <img className='w-40 h-20  ml-55 absolute' src="BG-TEXT1.svg" alt="" />
-                  <p className='text-2xl bebas-font text-white absolute ml-58  mt-7'>TENANT PARTNER</p>
-                  <img className='w-[30rem] h-60 mt-17 ml-12 absolute ' src="sponsorandparter/image-4.webp" alt="" />
+                  <img className='w-40 h-20  sm:ml-55 ml-18 mt-15 absolute' src="BG-TEXT1.svg" alt="" />
+                  <p className='text-2xl bebas-font text-white absolute sm:ml-58 ml-22 mt-21  sm:mt-7'>TENANT PARTNER</p>
+                  <img className='sm:w-[30rem] w-60 sm:h-60 h-40 sm:mt-17 mt-30 sm:ml-20 ml-8 absolute ' src="sponsorandparter/image-4.webp" alt="" />
                   <img className='w-[40rem] h-80 mt-10' src="sponsorandparter/image-2.svg" alt="" />
                 </div>
                 </div>
