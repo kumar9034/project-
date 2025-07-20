@@ -30,7 +30,7 @@ const Playlist = () => {
                     </div>
                 </div>
                 <Bg images={["playlist/image-1.webp"]} height={"h-100"} />
-                <div className='w-100vw min-h-screen  flex justify-center  sm:px-10 '>
+                <div className='w-[90vw] min-h-screen  flex justify-center  sm:px-10 pl-3  pr-4'>
                     <Box sx={{ width: "100%",  typography: 'body1' }}>
                         <TabContext value={value}>
                             <Box sx={{ width: '90vw', display: 'flex-col ', alignItems: 'center' }}>
@@ -42,10 +42,10 @@ const Playlist = () => {
                                 <TabPanel value={'1'}>
                                     <div className="relative z-10  space-y-8 flex flex-col items-center">
 
-                                        <div className='border-1 sm:w-[80vw] w-[95vw]  h-auto bg-[#131313]  rounded-lg border-[#2e2c2c]'>
+                                        <div className='border-1 sm:w-[80vw] w-[95vw]  h-auto bg-[#131313] mr-2 rounded-lg border-[#2e2c2c]'>
 
                                             <div
-                                                className="bg-[#1f1f1f] rounded-xl p-4 sm:flex items-center w-[95vw] sm:w-[80vw] max-w-5xl shadow-lg"
+                                                className="bg-[#1f1f1f] rounded-xl p-4 sm:flex items-center w-[94vw] sm:w-[80vw] max-w-5xl shadow-lg"
                                             >
                                                 {/* Album Image */}
                                                 <img
