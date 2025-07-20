@@ -96,7 +96,7 @@ const Playlist = () => {
                                         <div className='border-1 sm:w-[80vw] w-[95vw]  h-auto bg-[#131313]  rounded-lg border-[#1f1f1f]'>
 
                                             <div
-                                                className="bg-[#1f1f1f] rounded-xl p-4 sm:flex items-center w-[95vw] sm:w-[80vw] max-w-5xl shadow-lg"
+                                                className="bg-[#1f1f1f] rounded-xl p-4 sm:flex items-center w-[94vw] sm:w-[80vw] max-w-5xl shadow-lg"
                                             >
                                                 {/* Album Image */}
                                                 <img
@@ -147,7 +147,7 @@ const Playlist = () => {
                                         <div className='border-1 sm:w-[80vw] w-[95vw]  h-auto bg-[#131313]  rounded-lg border-[#1f1f1f]'>
 
                                             <div
-                                                className="bg-[#1f1f1f] rounded-xl p-4 sm:flex items-center w-[95vw] sm:w-[80vw] max-w-5xl shadow-lg"
+                                                className="bg-[#1f1f1f] rounded-xl p-4 sm:flex items-center w-[94vw] sm:w-[80vw] max-w-5xl shadow-lg"
                                             >
                                                 {/* Album Image */}
                                                 <img
