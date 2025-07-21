@@ -276,7 +276,7 @@ const Photo = () => {
 
                                 <img className='w-full sm:h-[30rem] h-[40vh]  object-cover' src={selecte.image} alt="" />
                                 <p className='text-md font-[400] h-25 mt-3'>{selecte.description}</p>
-                                <div className='flex mt-[5vh] '>
+                                <div className='flex mt-[4vh] '>
                                 <span><img className='w-7 h-7 ' src="image-52.webp" alt="" /></span>
                                 <p className='bebas-font text-lg  ml-3 '>@{selecte.name}</p>
 
