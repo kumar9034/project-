@@ -113,7 +113,9 @@ const Section2 = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center sm:mt-40 mt-60 '>
-                <div className='w-40 text-[#f19b17] sm:mt-50 mt-5 bebas-font h-10 border-[#f19b17] text-[1.4rem] cursor-pointer hover:bg-[#f19b17] hover:text-white rounded-lg flex justify-center items-center border-1 '>see all line up</div>
+                <Link to="/lineup">
+                <div className='w-40  text-[#f19b17] sm:mt-50 mt-5 bebas-font h-10 border-[#f19b17] text-[1.4rem] cursor-pointer hover:bg-[#f19b17] hover:text-white rounded-lg flex justify-center items-center border-1 '>see all line up</div>
+                </Link>
             </div>
         </div>
     )
