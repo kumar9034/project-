@@ -14,15 +14,15 @@ const handleChange = (event, newValue) => {
   };
   return (
     < >
-      <div className='w-full h-100 absolute z-10 ' style={{
+      <div className='w-full h-[70vh] absolute z-10 ' style={{
         background: 'linear-gradient(0deg, rgb(19, 19, 19) 8%, rgba(19, 19, 19, 0.6) 50%, rgba(19, 19, 19, 0.2) 100%)',
       }}>
         <Navbar />
-        <div className='w-full h-auto  pb-20 flex flex-col items-center pt-50   '>
+        <div className='w-full h-[70vh]   pb-20 flex flex-col items-center pt-50   '>
           <h1 className='bebas-font sm:text-5xl text-4xl text-white '>Sponsor & Partnership</h1>
           <p className='text-[#b6b6b6] text-center'>Thank you to our Sponsor & Partnership for Supporting The Sounds Project</p>
 
-          <div className=' sm:w-[45vw] w-40 sm:ml-[8vw] ml-5 mt-30 h-20   '>
+          <div className=' sm:w-[45vw] w-40 sm:ml-[8vw] ml-5 mt-30  h-20   '>
             <div>
               <img className='sm:w-[20vw] w-30 h-10 sm:ml-[12vw] ml-5 absolute -mt-5' src="BG-TEXT1.svg" alt="" />
               <p className='bebas-font sm:text-3xl text-lg text-white absolute z-1 -mt-4 sm:ml-[17vw] ml-10'>main sponsor</p>
@@ -35,7 +35,7 @@ const handleChange = (event, newValue) => {
           </div>
       </div>
           
-          <Box sx={{ width:"100%", backgroundColor: "#131313", typography:'body1', pt: 10, }}>
+          <Box sx={{ width:"100%", backgroundColor: "#131313", typography:'body1', pt: 40, pl:5 }}>
             <TabContext value={value}  >
               <Box sx={{  width:"100%", margin:'auto',  }}>
                 <TabList TabIndicatorProps={{ style: { display: 'none' } }} onChange={handleChange} className='sm:ml-[37vw] ml-[10vw]'>
@@ -65,8 +65,7 @@ const handleChange = (event, newValue) => {
       <div className='w-full h-100 absolute z-9'>
         <Bg  images={['sponsorandparter/image-1.webp']} height={'h-100'} />
       </div>
-      <div   className='w-full h-screen bg-[#131313] absolute'>
-      </div>
+      
     </>
   )
 }

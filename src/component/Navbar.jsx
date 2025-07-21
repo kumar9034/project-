@@ -87,7 +87,7 @@ const Navbar = () => {
 
   return (
     <div className='w-full h-18 bg-black/10 backdrop-blur-md fixed top-0 left-0 z-90 absolute flex items-center justify-between px-2'>
-      <div className='sm:w-[10vw] w-[30vw] z-60  flex  '>
+      <div className='sm:w-[8vw] w-[30vw] z-60  flex  '>
         <img src="image-5.png" alt="" />
       </div>
       <div className='lg:block hidden w-110  lg:flex gap-5  '>
@@ -98,10 +98,7 @@ const Navbar = () => {
         <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/playlist'>playlist</Link></p>
         <p className='bebas-font cursor-pointer pb-1 border-b-2 border-transparent hover:border-[#f19b17] transition-all duration-300 font-[500] text-[#ffffff] text-[1.4rem]'><Link to='/contact-us'>contactus</Link></p>
       </div>
-      <div className=' w-60 ml-10 flex justify-center items-center gap-3'>
-
-
-      </div>
+      
       <div className=' hidden lg:block'>
         <Link to="/ticket">
           <div className='w-35 h-10  cursor-pointer border-1 border-[#f19b17] flex items-center justify-center text-[#f19b17] bebas-font text-[1.4rem] rounded-lg hover:text-white hover:bg-[#f19b17]'>buy tickets</div>
