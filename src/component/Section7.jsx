@@ -161,7 +161,9 @@ const Section7 = () => {
         <Link to="/photo">
         <div className='sm:w-50 w-30 sm:h-13 h-10  bg-[#ffa000]  rounded-lg text-white bebas-font sm:text-2xl text-md flex justify-center items-center  '>share your Memories</div>
         </Link>
+         <Link to="/photo">
         <div className='sm:w-30 w-20 sm:h-13 h-10 border-[#ffa000] border-1 rounded-lg hover:bg-[#ffa000]  sm:text-2xl text-md  text-white bebas-font flex justify-center items-center '>see all</div>
+         </Link>
       </div>
     </div>
   )

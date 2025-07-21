@@ -96,7 +96,7 @@ const Home = () => {
       height={'h-[100vh]'} />
     <div >
       <Section2 />
-      <div className='max-w-full sm:h-[90vh] h-[80vh]   bg-[#131313] flex-col '>
+      <div className='max-w-full sm:h-[90vh] h-[70vh]   bg-[#131313] flex-col '>
         <div
           ref={sectionRef}
           className="w-full h-[80vh] overflow-hidden flex  sm:px-20 px-0 justify-between relative"
