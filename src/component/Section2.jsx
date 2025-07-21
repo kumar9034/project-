@@ -67,19 +67,19 @@ const Section2 = () => {
     ]
 
     return (
-        <div className='w-full h-[90vh] bg-[#131313] text-white'>
+        <div className='w-full h-auto pb-20 bg-[#131313] text-white'>
             <div className='flex items-center justify-center sm:pt-15 gap-5 '>
                 <Link to="/ticket">
-                <div className='sm:w-50 w-30 sm:h-15 h-10 relative z-70 bg-[#f19b17] flex justify-center items-center bebas-font sm:text-3xl text-xl rounded-lg cursor-pointer '> buy tickets
-                    <div className='sm:w-25 w-23 h-5  absolute z-72 sm:mt-14 mt-10'><img src="BG-TEXT1.svg" alt="" />
+                    <div className='sm:w-50 w-30 sm:h-15 h-10 relative z-70 bg-[#f19b17] flex justify-center items-center bebas-font sm:text-3xl text-xl rounded-lg cursor-pointer '> buy tickets
+                        <div className='sm:w-25 w-23 h-5  absolute z-72 sm:mt-14 mt-10'><img src="BG-TEXT1.svg" alt="" />
+                        </div>
+                        <p className='absolute z-73 text-sm sm:mt-16 mt-12'>almost sold out!</p>
                     </div>
-                    <p className='absolute z-73 text-sm sm:mt-16 mt-12'>almost sold out!</p>
-                </div>
                 </Link>
                 <Link to='/lineup'>
-                <div className='sm:w-50 w-30 sm:h-15 h-10 border-[#f19b17] border-1  bebas-font sm:text-3xl text-xl flex text-[#f19b17] justify-center items-center rounded-lg cursor-pointer hover:bg-[#f19b17] hover:text-white '>
-                  line up
-                </div>
+                    <div className='sm:w-50 w-30 sm:h-15 h-10 border-[#f19b17] border-1  bebas-font sm:text-3xl text-xl flex text-[#f19b17] justify-center items-center rounded-lg cursor-pointer hover:bg-[#f19b17] hover:text-white '>
+                        line up
+                    </div>
                 </Link>
             </div>
             <div className='w-full h-10 justify-center items-center  mt-10 flex gap-4'>
@@ -99,8 +99,8 @@ const Section2 = () => {
                     <p className='bebas-font sm:text-4xl  text-2xl ml-2'>line up</p>
                 </div>
             </div>
-            <div className="w-full  absolute overflow-x-auto whitespace-nowrap scrollbar-hide pl-5 mr-5 mt-10">
-                <div  className="flex  gap-4">
+            <div className="w-full h-[50vh]  absolute overflow-x-auto whitespace-nowrap scrollbar-hide pl-5 mr-5 mt-10">
+                <div className="flex  gap-4">
                     {cards.map((items) => (
                         <div key={items.id}>
                             <Card
@@ -111,6 +111,9 @@ const Section2 = () => {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div className='flex justify-center items-center sm:mt-40 mt-60 '>
+                <div className='w-40 text-[#f19b17] sm:mt-50 mt-5 bebas-font h-10 border-[#f19b17] text-[1.4rem] cursor-pointer hover:bg-[#f19b17] hover:text-white rounded-lg flex justify-center items-center border-1 '>see all line up</div>
             </div>
         </div>
     )

@@ -269,12 +269,12 @@ const Photo = () => {
                                     <p className='text-white bebas-font text-3xl mt-2 mr-2'>at</p>
                                     <img className='w-20 h-10 ' src="image-4.png" alt="" />
                             </div>
-                            <button className=' absolute mt-22 cursor-pointer ml-[20rem]' onClick={() => setSelecte(null)}>
+                            <button className=' absolute mt-21 cursor-pointer sm:ml-[20rem] ml-50 ' onClick={() => setSelecte(null)}>
                                 <IoMdCloseCircle  color='#b6b6b6' size={30}/>
                             </button>
-                            <div className='w-[25rem] h-[40rem] p-3 bg-white mt- '>
+                            <div className='sm:w-[25rem] w-[70vw] sm:h-[40rem] h-[70vh] p-3 bg-white mt- '>
 
-                                <img className='w-full h-[30rem] object-cover' src={selecte.image} alt="" />
+                                <img className='w-full sm:h-[30rem] h-[40vh]  object-cover' src={selecte.image} alt="" />
                                 <p className='text-md font-[400] h-25 mt-3'>{selecte.description}</p>
                                 <div className='flex '>
                                 <span><img className='w-7 h-7 ' src="image-52.webp" alt="" /></span>

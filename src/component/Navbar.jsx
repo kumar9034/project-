@@ -87,7 +87,7 @@ const Navbar = () => {
 
   return (
     <div className='w-full h-18 bg-black/10 backdrop-blur-md fixed top-0 left-0 z-90 absolute flex items-center justify-between px-2'>
-      <div className='sm:w-[20vw] w-[30vw] z-60  flex  '>
+      <div className='sm:w-[10vw] w-[30vw] z-60  flex  '>
         <img src="image-5.png" alt="" />
       </div>
       <div className='lg:block hidden w-110  lg:flex gap-5  '>

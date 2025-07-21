@@ -1,5 +1,6 @@
 import React from 'react'
 import Card4 from './Card4'
+import { Link } from 'react-router-dom'
 
 const Section7 = () => {
 
@@ -133,7 +134,7 @@ const Section7 = () => {
         </div>
 
         {/* "AT" + logo */}
-        <div className="flex items-center justify-center mt-4 gap-2 flex-wrap">
+        <div className="flex items-center justify-center mt-4 gap-2 flex-wrap sm:flex">
           <p className="bebas-font text-white text-lg sm:text-3xl">AT</p>
           <img
             src="image-4.png"
@@ -143,7 +144,7 @@ const Section7 = () => {
         </div>
       </div>
 
-      <div className='w-full flex scroll-animation w-max   gap-10 pl-20 overflow-x-auto whitespace-nowrap scrollbar-hide p-10 h-110'>
+      <div className='w-full flex scroll-animation w-max mt-10   gap-10 pl-20 overflow-x-auto whitespace-nowrap scrollbar-hide p-10 h-100'>
         {cards.map((items) => (<Card4
           name={items.name}
           description={items.description}
@@ -156,9 +157,11 @@ const Section7 = () => {
           hiddenr={items.hiddenr} />))}
       </div>
 
-      <div className='flex justify-center items-center gap-5 mt-20 pb-10'>
-        <div className='w-50 h-13  bg-[#ffa000]  rounded-lg text-white bebas-font text-2xl flex justify-center items-center  '>share your Memories</div>
-        <div className='w-30 h-13 border-[#ffa000] border-1 rounded-lg hover:bg-[#ffa000]  text-2xl  text-white bebas-font flex justify-center items-center '>see all</div>
+      <div className='flex justify-center items-center gap-5 sm:mt-20 mt-5 pb-10'>
+        <Link to="/photo">
+        <div className='sm:w-50 w-30 sm:h-13 h-10  bg-[#ffa000]  rounded-lg text-white bebas-font sm:text-2xl text-md flex justify-center items-center  '>share your Memories</div>
+        </Link>
+        <div className='sm:w-30 w-20 sm:h-13 h-10 border-[#ffa000] border-1 rounded-lg hover:bg-[#ffa000]  sm:text-2xl text-md  text-white bebas-font flex justify-center items-center '>see all</div>
       </div>
     </div>
   )

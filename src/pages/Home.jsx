@@ -96,13 +96,10 @@ const Home = () => {
       height={'h-[100vh]'} />
     <div >
       <Section2 />
-      <div className='max-w-full sm:h-[140vh] h-[100vh]   bg-[#131313] flex-col '>
-        <div className='flex justify-center items-center '>
-          <div className='w-40 text-[#f19b17] sm:mt-50 mt-5 bebas-font h-10 border-[#f19b17] text-[1.4rem] cursor-pointer hover:bg-[#f19b17] hover:text-white rounded-lg flex justify-center items-center border-1 '>see all line up</div>
-        </div>
+      <div className='max-w-full sm:h-[90vh] h-[80vh]   bg-[#131313] flex-col '>
         <div
           ref={sectionRef}
-          className="w-full h-full overflow-hidden flex mt-20 sm:px-20 px-0 justify-between relative"
+          className="w-full h-[80vh] overflow-hidden flex  sm:px-20 px-0 justify-between relative"
           style={{
             background:
               "linear-gradient(180deg, rgb(19, 19, 19) 0%, #1a1a1a 50%, rgb(19, 19, 19) 100%)",
@@ -124,7 +121,7 @@ const Home = () => {
             )
           )}
 
-          <div className="sm:w-[60vw] w-[85vw] flex flex-col items-center  sm:ml-[20vw] ml-[5vw] absolute mt-10 z-49">
+          <div className="sm:w-[60vw] w-[85vw] flex flex-col items-center  sm:ml-[15vw] ml-[5vw] absolute mt-10 z-49">
             {[
               <>
                 <span className="inline">GOOD VIBES,</span>
@@ -182,7 +179,7 @@ const Home = () => {
         <span className='w-40 h-10 text-4xl absolute z-1'>your ticket</span>
         <h1 className='text-4xl '>now</h1>
       </div>
-      <div className='absolute w-full overflow-hidden pb-20 sm:pt-20 pt-5 px-5 overflow-x-auto whitespace-nowrap scrollbar-hide  h-90 flex mt-30 gap-5  '>
+      <div className='absolute w-full overflow-hidden pb-20 sm:pt-10 pt-5 px-5 sm:px-20 overflow-x-auto whitespace-nowrap scrollbar-hide  h-90 flex mt-30 gap-5  '>
         {
           cards.map((items) => (<Newcard
             key={items.id}
